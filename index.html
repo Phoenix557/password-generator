@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Password Generator</title>
+
+    <div id="footer">
+      <a>Created by </a> 
+      <a href="https://github.com/Phoenix557">Phoenix557</a>
+    </div>
+</head>
+
+<body> 
+ <div class="box">
+     <h2>Password Generator</h2>
+        <input type="text" name="" placeholder="Create password" id="password" readonly>
+        <table>
+          <th><div id="button" class="btn1"onclick="genPassword()">Generate</div></th>
+          <th><a  id="button" class="btn2" onclick="copyPassword()">Copy</a></th>
+        </table>
+    </div>
+    </div>   
+</body>
+<script>
+    var password=document.getElementById("password");
+    function genPassword() {
+        var chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        var passwordLength = 25;
+        var password = "";
+        for (var i = 0; i <= passwordLength; i++) {
+            var randomNumber = Math.floor(Math.random() * chars.length);
+            password += chars.substring(randomNumber, randomNumber +1);
+        }
+        document.getElementById("password").value = password
+    }
+    function copyPassword() {
+  var copyText = document.getElementById("password");
+  copyText.select();
+  copyText.setSelectionRange(0, 999);
+  document.execCommand("copy");
+  
+}
+</script>
+
+</html>

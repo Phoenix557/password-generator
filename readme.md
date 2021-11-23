@@ -4,11 +4,15 @@
 
 <body>
     <h3>Password Generator is progrmmed in HTML, CSS, & JavaScript</h3>
-    <stong>If you have any questions, feel free to create </strong>
+    <p>If you have any questions, feel free to create </a>
         <a href="https://github.com/Phoenix557/password-gen/issues">bug report</a>
         <div>
 <img src="https://cdn.discordapp.com/attachments/855634041424183346/912058342162182164/unknown.png" width="350" height="250" />
         </div>
+
+<div>
+    <p> Note: Passwords are generated 25 characters long, if you'd like to change this; you do so </a>
+    <a href="https://github.com/Phoenix557/password-generator/blob/main/index.html#L32"> here </a>
 </body>
 
 <footer>
